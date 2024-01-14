@@ -1,0 +1,94 @@
+:root {
+    color-scheme: dark;
+}
+
+body {
+    margin: 0;
+    font-family: 'SF Pro Display', 'Roboto', sans-serif;
+}
+
+button {
+    font: inherit;
+    background-color: #444;
+    border: 0.5px solid #0007;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 1px #000, 0 0 4px #222;
+    cursor: pointer;
+    transition: background-color 0.1s ease-out;
+    user-select: none;
+}
+
+button:active {
+    background-color: #666;
+}
+
+code {
+    background-color: #333;
+    border-radius: 4px;
+    padding: 1px 4px;
+    box-shadow: 0px 1px 0px black;
+    border: 0.5px solid #0008;
+}
+
+pre code {
+    display: inline-block;
+    padding: 6px 8px;
+    white-space: pre-wrap;
+}
+
+input,
+textarea {
+    font: inherit;
+    border: 0.5px solid #444;
+    border-radius: 5px;
+    background-color: #333;
+    box-shadow: 0 1px 0 black;
+    outline: 0 solid #9ce277;
+    transition: outline 0.1s ease-out;
+}
+
+input:invalid {
+    outline: 2px solid red;
+}
+
+input:focus-visible,
+textarea:focus-visible {
+    outline: 2px solid #9ce277;
+}
+
+@media not (prefers-color-scheme: dark) {
+    :root {
+        color-scheme: light;
+        background-color: #ddd;
+    }
+
+    button {
+        background-color: #fff;
+        border: none;
+        box-shadow: 0 1px #aaa, 0 0 4px #bbb;
+    }
+
+    button:active {
+        background-color: #eee;
+    }
+
+    code {
+        background-color: #f0f0f0;
+        box-shadow: 0px 1px 0px #bbb;
+        border: 0.5px solid #ccc;
+    }
+
+    input,
+    textarea {
+        border: 0.5px solid #c7c7c7;
+        background-color: #fff;
+        box-shadow: 0 1px 0 #bbb;
+        outline: 0 solid #7eda4d;
+    }
+
+    input:focus-visible,
+    textarea:focus-visible {
+        outline: 2px solid #7eda4d;
+    }
+}
